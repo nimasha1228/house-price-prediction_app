@@ -11,7 +11,7 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/predict', methods=['GET', 'POST'])
+@app.route('/predict', methods=['POST'])
 def predict():
     val1 = request.form['bedrooms']
     val2 = request.form['bathrooms']
